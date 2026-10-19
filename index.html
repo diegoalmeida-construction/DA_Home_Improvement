@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego Almeida Construction | Home Improvement Contractor in Clifton, NJ</title>
+<meta name="description" content="Diego Almeida Construction – licensed New Jersey Home Improvement Contractor (Lic. #13VH08017600) based in Clifton, NJ. Kitchens, bathrooms, decks, flooring, painting, siding and more. Se habla español.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M6 30 32 8l26 22' fill='none' stroke='%23f2a541' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='14' y='28' width='36' height='30' rx='3' fill='%2314213d'/%3E%3Ctext x='32' y='51' text-anchor='middle' font-family='Arial' font-weight='700' font-size='18' fill='%23fff'%3EDA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14213d; --navy-2:#1f3157; --amber:#f2a541; --amber-dark:#d98a1f;
+    --cream:#faf7f2; --sand:#efe8dc; --ink:#1d2433; --muted:#5b6475; --white:#fff;
+    --radius:14px; --shadow:0 10px 30px rgba(20,33,61,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  h1,h2,h3,.brand-name{font-family:"Barlow Condensed",Arial Narrow,sans-serif;letter-spacing:.5px;line-height:1.1}
+  a{color:inherit}
+  img,svg{display:block;max-width:100%}
+  .wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+  section{padding:84px 0}
+  .eyebrow{display:inline-block;color:var(--amber-dark);font-weight:600;text-transform:uppercase;letter-spacing:2px;font-size:.8rem;margin-bottom:10px}
+  h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--navy);margin-bottom:14px}
+  .lead{color:var(--muted);max-width:640px;font-size:1.05rem}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:.2s}
+  .btn-primary{background:var(--amber);color:var(--navy)}
+  .btn-primary:hover{background:var(--amber-dark)}
+  .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn svg{width:18px;height:18px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .brand svg{width:46px;height:46px}
+  .brand-name{font-size:1.35rem;color:var(--navy);font-weight:700;line-height:1}
+  .brand-name small{display:block;font-size:.8rem;letter-spacing:3.5px;color:var(--amber-dark);font-weight:600}
+  .menu{display:flex;gap:26px;list-style:none}
+  .menu a{text-decoration:none;font-weight:500;color:var(--navy)}
+  .menu a:hover{color:var(--amber-dark)}
+  .nav-right{display:flex;align-items:center;gap:12px}
+  .lang{display:flex;border:2px solid var(--navy);border-radius:999px;overflow:hidden}
+  .lang button{border:0;background:transparent;padding:6px 12px;font-weight:600;cursor:pointer;color:var(--navy);font-family:inherit}
+  .lang button.active{background:var(--navy);color:#fff}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+  .burger span{display:block;width:24px;height:3px;background:var(--navy);margin:4px 0;border-radius:2px}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:70px 0 90px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:rgba(242,165,65,.08)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.3rem);margin:12px 0 18px}
+  .hero h1 span{color:var(--amber)}
+  .hero p{color:#cfd6e4;font-size:1.1rem;max-width:520px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(242,165,65,.15);color:var(--amber);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.85rem}
+  .hero-art{border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+
+  /* Trust strip */
+  .trust{background:var(--amber);padding:22px 0}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;color:var(--navy)}
+  .trust-item{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.95rem}
+  .trust-item svg{width:26px;height:26px;flex-shrink:0}
+
+  /* Services */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:.25s;border-top:4px solid transparent}
+  .card:hover{transform:translateY(-4px);border-top-color:var(--amber)}
+  .icon{width:54px;height:54px;border-radius:12px;background:var(--sand);display:grid;place-items:center;margin-bottom:16px}
+  .icon svg{width:30px;height:30px}
+  .card h3{font-size:1.5rem;color:var(--navy);margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* Gallery */
+  .gallery{background:var(--sand)}
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+  .shot{border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+  .shot figcaption{padding:14px 18px;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+  .shot figcaption span{font-weight:500;color:var(--muted);font-size:.85rem}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .license-card{background:var(--navy);color:#fff;border-radius:20px;padding:34px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .license-card::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.025) 22px 44px)}
+  .license-card > *{position:relative}
+  .license-card h3{font-size:1.7rem;color:var(--amber);margin-bottom:18px}
+  .lic-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.18)}
+  .lic-row:last-child{border-bottom:0}
+  .lic-row dt{color:#aeb8cc}
+  .lic-row dd{font-weight:600;text-align:right}
+  .status{display:inline-flex;align-items:center;gap:6px;color:#7ee2a8}
+  .status::before{content:"";width:9px;height:9px;border-radius:50%;background:#7ee2a8}
+  .checks{list-style:none;margin-top:22px;display:grid;gap:12px}
+  .checks li{display:flex;gap:10px;align-items:flex-start}
+  .checks svg{width:22px;height:22px;flex-shrink:0;margin-top:2px}
+
+  /* Process */
+  .process{background:#fff}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px;counter-reset:step}
+  .step{padding:26px;border-radius:var(--radius);background:var(--cream);position:relative}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:"Barlow Condensed";font-size:2.6rem;font-weight:700;color:var(--amber);display:block;line-height:1;margin-bottom:10px}
+  .step h3{font-size:1.35rem;color:var(--navy);margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.93rem}
+
+  /* Contact */
+  .contact{background:var(--navy);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lead{color:#cfd6e4}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;margin-top:40px}
+  form{background:#fff;color:var(--ink);border-radius:20px;padding:30px;display:grid;gap:14px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{font-weight:600;font-size:.88rem;color:var(--navy);display:grid;gap:6px}
+  input,select,textarea{font:inherit;padding:12px 14px;border:1.5px solid #d8dce4;border-radius:10px;background:#fbfcfd;width:100%}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(242,165,65,.25)}
+  textarea{min-height:120px;resize:vertical}
+  .form-note{font-size:.8rem;color:var(--muted)}
+  .info{display:grid;gap:16px;align-content:start}
+  .info-item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);padding:18px;border-radius:14px;text-decoration:none}
+  a.info-item:hover{background:rgba(255,255,255,.12)}
+  .info-item svg{width:26px;height:26px;flex-shrink:0;color:var(--amber)}
+  .info-item b{display:block;color:var(--amber);font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px}
+  .map{border-radius:14px;overflow:hidden;height:220px;border:0;width:100%}
+
+  footer{background:#0d1629;color:#9aa5bb;padding:34px 0;font-size:.88rem}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+  .foot .brand-name{color:#fff}
+
+  .fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--amber);display:none;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+  .fab svg{width:26px;height:26px}
+
+  /* Responsive */
+  @media (max-width:960px){
+    .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+    .services-grid{grid-template-columns:repeat(2,1fr)}
+    .steps,.trust-grid{grid-template-columns:repeat(2,1fr)}
+    .menu{display:none;position:absolute;top:74px;left:0;right:0;background:var(--cream);flex-direction:column;padding:18px 24px;gap:16px;border-bottom:1px solid var(--sand)}
+    .menu.open{display:flex}
+    .burger{display:block}
+    .nav-call{display:none}
+    .fab{display:grid}
+  }
+  @media (max-width:600px){
+    section{padding:64px 0}
+    .services-grid,.gallery-grid,.steps,.row{grid-template-columns:1fr}
+    .trust-grid{grid-template-columns:1fr 1fr}
+    .brand-name{font-size:1.1rem}
+    .brand svg{width:40px;height:40px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Diego Almeida Construction">
+      <!-- LOGO -->
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M5 31 32 8l27 23" fill="none" stroke="#f2a541" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="14" y="27" width="36" height="31" rx="3" fill="#14213d"/>
+        <rect x="44" y="12" width="6" height="12" fill="#14213d"/>
+        <text x="32" y="50" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="21" fill="#fff">DA</text>
+      </svg>
+      <span class="brand-name">DIEGO ALMEIDA<small>CONSTRUCTION</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="tel:+19738516814" class="btn btn-primary nav-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        (973) 851-6814
+      </a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span data-i18n="hero_badge">NJ Licensed Home Improvement Contractor</span>
+      </span>
+      <h1 data-i18n-html="hero_title">Building Better <span>Homes</span> Across New Jersey</h1>
+      <p data-i18n="hero_text">From kitchens and bathrooms to decks, flooring and exteriors — Diego Almeida Construction delivers quality craftsmanship, honest pricing and clean job sites. Serving Clifton and surrounding communities.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="cta_estimate">Request an Estimate</a>
+        <a href="tel:+19738516814" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span data-i18n="cta_call">Call Now</span>
+        </a>
+      </div>
+    </div>
+    <!-- HERO IMAGE: home exterior illustration -->
+    <div class="hero-art">
+      <svg viewBox="0 0 560 400" role="img" aria-label="Renovated home exterior">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd59a"/><stop offset="1" stop-color="#fbeedb"/></linearGradient>
+        </defs>
+        <rect width="560" height="400" fill="url(#sky)"/>
+        <circle cx="460" cy="90" r="42" fill="#f2a541" opacity=".85"/>
+        <path d="M0 300 Q140 250 280 290 T560 280 V400 H0z" fill="#9bbf85"/>
+        <!-- house -->
+        <rect x="120" y="170" width="300" height="160" fill="#f5f1ea"/>
+        <g stroke="#e3dccf" stroke-width="2">
+          <line x1="120" y1="190" x2="420" y2="190"/><line x1="120" y1="210" x2="420" y2="210"/><line x1="120" y1="230" x2="420" y2="230"/>
+          <line x1="120" y1="250" x2="420" y2="250"/><line x1="120" y1="270" x2="420" y2="270"/><line x1="120" y1="290" x2="420" y2="290"/><line x1="120" y1="310" x2="420" y2="310"/>
+        </g>
+        <polygon points="100,178 270,72 440,178" fill="#14213d"/>
+        <polygon points="100,178 270,72 440,178 430,184 270,84 110,184" fill="#0d1629"/>
+        <rect x="350" y="92" width="26" height="48" fill="#1f3157"/>
+        <!-- door -->
+        <rect x="245" y="235" width="50" height="95" rx="3" fill="#f2a541"/>
+        <circle cx="285" cy="285" r="3" fill="#14213d"/>
+        <rect x="236" y="226" width="68" height="9" fill="#14213d"/>
+        <!-- windows -->
+        <g fill="#8fb8de" stroke="#14213d" stroke-width="5">
+          <rect x="148" y="215" width="62" height="58"/><rect x="330" y="215" width="62" height="58"/><rect x="244" y="118" width="52" height="44"/>
+        </g>
+        <g stroke="#14213d" stroke-width="3"><line x1="179" y1="215" x2="179" y2="273"/><line x1="148" y1="244" x2="210" y2="244"/><line x1="361" y1="215" x2="361" y2="273"/><line x1="330" y1="244" x2="392" y2="244"/></g>
+        <!-- bushes -->
+        <g fill="#5f8f4e"><circle cx="140" cy="325" r="22"/><circle cx="170" cy="330" r="18"/><circle cx="380" cy="326" r="20"/><circle cx="408" cy="330" r="17"/></g>
+        <!-- path -->
+        <polygon points="248,330 292,330 320,400 220,400" fill="#d8cdb9"/>
+        <!-- ladder -->
+        <g stroke="#7a4f22" stroke-width="5" stroke-linecap="round"><line x1="455" y1="340" x2="430" y2="160"/><line x1="480" y1="340" x2="455" y2="160"/></g>
+        <g stroke="#7a4f22" stroke-width="4"><line x1="452" y1="315" x2="477" y2="315"/><line x1="447" y1="280" x2="472" y2="280"/><line x1="442" y1="245" x2="467" y2="245"/><line x1="437" y1="210" x2="462" y2="210"/><line x1="433" y1="180" x2="458" y2="180"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="trust_1">NJ Licensed &amp; Registered</span></div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span data-i18n="trust_2">English &amp; Español</span></div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="trust_3">Based in Clifton, NJ</span></div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg><span data-i18n="trust_4">Written Estimates</span></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="svc_eyebrow">What We Do</span>
+    <h2 data-i18n="svc_title">Home Improvement Services</h2>
+    <p class="lead" data-i18n="svc_lead">One trusted contractor for projects big and small, inside and out.</p>
+    <div class="services-grid">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 10h18M8 6h.01M12 6h.01M8 14v4M16 14v4"/></svg></div>
+        <h3 data-i18n="s1_t">Kitchen Remodeling</h3>
+        <p data-i18n="s1_d">Cabinets, countertops, backsplashes, lighting and complete kitchen makeovers.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M6 12V5a2 2 0 0 1 4 0M7 20l-1 2M17 20l1 2"/></svg></div>
+        <h3 data-i18n="s2_t">Bathroom Renovation</h3>
+        <p data-i18n="s2_d">Tile work, vanities, tubs, walk-in showers and fixture upgrades.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><path d="M2 20h20M4 20v-6h16v6M4 14V10M20 14V10M2 10h20M8 14v6M12 14v6M16 14v6"/></svg></div>
+        <h3 data-i18n="s3_t">Decks &amp; Porches</h3>
+        <p data-i18n="s3_d">New decks, repairs, railings, steps and outdoor living spaces.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v6M15 9v6M9 15v6"/></svg></div>
+        <h3 data-i18n="s4_t">Flooring</h3>
+        <p data-i18n="s4_d">Hardwood, laminate, luxury vinyl plank and tile installation.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><rect x="3" y="3" width="15" height="7" rx="1"/><path d="M18 6h3v6h-9v3"/><rect x="10" y="15" width="4" height="7" rx="1"/></svg></div>
+        <h3 data-i18n="s5_t">Painting &amp; Drywall</h3>
+        <p data-i18n="s5_d">Interior and exterior painting, drywall installation and repair.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2"><path d="M3 11 12 3l9 8"/><path d="M5 10v11h14V10M9 21v-6h6v6"/></svg></div>
+        <h3 data-i18n="s6_t">Exteriors &amp; Basements</h3>
+        <p data-i18n="s6_d">Siding, windows, doors, basement finishing and general repairs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS / PICTURES ============ -->
+<section class="gallery" id="projects">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="gal_eyebrow">Our Work</span>
+    <h2 data-i18n="gal_title">Project Showcase</h2>
+    <p class="lead" data-i18n="gal_lead">A look at the kinds of spaces we build and transform.</p>
+    <div class="gallery-grid">
+
+      <!-- Kitchen -->
+      <figure class="shot">
+        <svg viewBox="0 0 400 250" role="img" aria-label="Kitchen remodel">
+          <rect width="400" height="250" fill="#f3ede3"/>
+          <rect x="150" y="30" width="100" height="70" fill="#bcd7ee" stroke="#14213d" stroke-width="5"/>
+          <line x1="200" y1="30" x2="200" y2="100" stroke="#14213d" stroke-width="3"/>
+          <g fill="#14213d"><rect x="20" y="25" width="55" height="75" rx="3"/><rect x="80" y="25" width="55" height="75" rx="3"/><rect x="265" y="25" width="55" height="75" rx="3"/><rect x="325" y="25" width="55" height="75" rx="3"/></g>
+          <g fill="#f2a541"><rect x="66" y="55" width="4" height="18" rx="2"/><rect x="85" y="55" width="4" height="18" rx="2"/><rect x="311" y="55" width="4" height="18" rx="2"/><rect x="330" y="55" width="4" height="18" rx="2"/></g>
+          <g fill="#fff" opacity=".9"><rect x="20" y="118" width="360" height="40"/></g>
+          <g stroke="#e7e0d2" stroke-width="1.5"><line x1="20" y1="128" x2="380" y2="128"/><line x1="20" y1="138" x2="380" y2="138"/><line x1="20" y1="148" x2="380" y2="148"/></g>
+          <rect x="12" y="158" width="376" height="12" fill="#8b8f99"/>
+          <rect x="20" y="170" width="360" height="62" fill="#1f3157"/>
+          <g stroke="#14213d" stroke-width="3"><line x1="110" y1="170" x2="110" y2="232"/><line x1="200" y1="170" x2="200" y2="232"/><line x1="290" y1="170" x2="290" y2="232"/></g>
+          <g fill="#f2a541"><rect x="55" y="182" width="20" height="4" rx="2"/><rect x="145" y="182" width="20" height="4" rx="2"/><rect x="235" y="182" width="20" height="4" rx="2"/><rect x="325" y="182" width="20" height="4" rx="2"/></g>
+          <path d="M185 158v-20a12 12 0 0 1 24 0" fill="none" stroke="#8b8f99" stroke-width="4"/>
+          <rect x="0" y="232" width="400" height="18" fill="#c9a67a"/>
+          <g><line x1="120" y1="0" x2="120" y2="18" stroke="#333" stroke-width="2"/><path d="M108 18h24l-6 12h-12z" fill="#f2a541"/><line x1="280" y1="0" x2="280" y2="18" stroke="#333" stroke-width="2"/><path d="M268 18h24l-6 12h-12z" fill="#f2a541"/></g>
+        </svg>
+        <figcaption><span data-i18n-strong="g1">Kitchen Remodel</span><span data-i18n="g_interior">Interior</span></figcaption>
+      </figure>
+
+      <!-- Bathroom -->
+      <figure class="shot">
+        <svg viewBox="0 0 400 250" role="img" aria-label="Bathroom renovation">
+          <rect width="400" height="250" fill="#eef3f6"/>
+          <g stroke="#d4dee5" stroke-width="2">
+            <line x1="0" y1="40" x2="400" y2="40"/><line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="120" x2="400" y2="120"/><line x1="0" y1="160" x2="400" y2="160"/><line x1="0" y1="200" x2="400" y2="200"/>
+            <line x1="40" y1="0" x2="40" y2="250"/><line x1="80" y1="0" x2="80" y2="250"/><line x1="120" y1="0" x2="120" y2="250"/><line x1="160" y1="0" x2="160" y2="250"/><line x1="200" y1="0" x2="200" y2="250"/><line x1="240" y1="0" x2="240" y2="250"/><line x1="280" y1="0" x2="280" y2="250"/><line x1="320" y1="0" x2="320" y2="250"/><line x1="360" y1="0" x2="360" y2="250"/>
+          </g>
+          <!-- shower glass -->
+          <rect x="20" y="20" width="150" height="210" fill="#bfe0f2" opacity=".55" stroke="#8b8f99" stroke-width="4"/>
+          <path d="M60 40h40v12" fill="none" stroke="#8b8f99" stroke-width="5"/>
+          <circle cx="100" cy="58" r="10" fill="#8b8f99"/>
+          <g stroke="#8fb8de" stroke-width="2" stroke-dasharray="3 6"><line x1="94" y1="72" x2="88" y2="130"/><line x1="100" y1="72" x2="100" y2="135"/><line x1="106" y1="72" x2="112" y2="130"/></g>
+          <!-- mirror -->
+          <rect x="230" y="30" width="110" height="80" rx="40" fill="#dcebf5" stroke="#f2a541" stroke-width="5"/>
+          <!-- vanity -->
+          <rect x="210" y="130" width="150" height="12" fill="#fff" stroke="#c7cfd6"/>
+          <ellipse cx="285" cy="136" rx="30" ry="5" fill="#e3e9ee"/>
+          <path d="M285 130v-12h10" fill="none" stroke="#8b8f99" stroke-width="4"/>
+          <rect x="215" y="142" width="140" height="70" fill="#14213d"/>
+          <line x1="285" y1="142" x2="285" y2="212" stroke="#0d1629" stroke-width="3"/>
+          <g fill="#f2a541"><rect x="270" y="170" width="4" height="16" rx="2"/><rect x="296" y="170" width="4" height="16" rx="2"/></g>
+          <rect x="0" y="230" width="400" height="20" fill="#9aa5b1"/>
+          <!-- plant -->
+          <rect x="372" y="190" width="18" height="40" fill="#f2a541"/>
+          <g fill="#5f8f4e"><ellipse cx="376" cy="182" rx="7" ry="14"/><ellipse cx="388" cy="180" rx="6" ry="15"/></g>
+        </svg>
+        <figcaption><span data-i18n-strong="g2">Bathroom Renovation</span><span data-i18n="g_interior">Interior</span></figcaption>
+      </figure>
+
+      <!-- Deck -->
+      <figure class="shot">
+        <svg viewBox="0 0 400 250" role="img" aria-label="Backyard deck">
+          <rect width="400" height="250" fill="#cfe6f5"/>
+          <g fill="#fff" opacity=".8"><ellipse cx="80" cy="40" rx="40" ry="12"/><ellipse cx="300" cy="30" rx="50" ry="13"/></g>
+          <rect x="0" y="60" width="260" height="120" fill="#e9e2d4"/>
+          <g stroke="#d5ccba" stroke-width="2"><line x1="0" y1="80" x2="260" y2="80"/><line x1="0" y1="100" x2="260" y2="100"/><line x1="0" y1="120" x2="260" y2="120"/><line x1="0" y1="140" x2="260" y2="140"/><line x1="0" y1="160" x2="260" y2="160"/></g>
+          <rect x="40" y="80" width="80" height="90" fill="#8fb8de" stroke="#14213d" stroke-width="5"/>
+          <line x1="80" y1="80" x2="80" y2="170" stroke="#14213d" stroke-width="3"/>
+          <rect x="260" y="150" width="140" height="100" fill="#9bbf85"/>
+          <!-- deck floor -->
+          <polygon points="0,180 330,180 380,215 0,215" fill="#b07c48"/>
+          <g stroke="#8d5f33" stroke-width="2"><line x1="0" y1="188" x2="341" y2="188"/><line x1="0" y1="197" x2="354" y2="197"/><line x1="0" y1="206" x2="367" y2="206"/></g>
+          <rect x="0" y="215" width="380" height="10" fill="#7a4f22"/>
+          <g fill="#7a4f22"><rect x="40" y="225" width="10" height="25"/><rect x="180" y="225" width="10" height="25"/><rect x="340" y="225" width="10" height="25"/></g>
+          <!-- railing -->
+          <rect x="140" y="130" width="200" height="8" fill="#14213d"/>
+          <g fill="#14213d"><rect x="140" y="130" width="6" height="50"/><rect x="180" y="138" width="4" height="42"/><rect x="215" y="138" width="4" height="42"/><rect x="250" y="138" width="4" height="42"/><rect x="285" y="138" width="4" height="42"/><rect x="334" y="130" width="6" height="50"/></g>
+          <!-- chairs -->
+          <g fill="#f2a541"><rect x="40" y="150" width="34" height="8"/><rect x="40" y="135" width="8" height="23"/><rect x="40" y="158" width="4" height="20"/><rect x="70" y="158" width="4" height="20"/></g>
+          <circle cx="110" cy="168" r="14" fill="#14213d"/>
+        </svg>
+        <figcaption><span data-i18n-strong="g3">Backyard Deck</span><span data-i18n="g_exterior">Exterior</span></figcaption>
+      </figure>
+
+      <!-- Living room / flooring -->
+      <figure class="shot">
+        <svg viewBox="0 0 400 250" role="img" aria-label="Living room flooring and paint">
+          <rect width="400" height="250" fill="#e4ecf1"/>
+          <rect x="0" y="0" width="140" height="170" fill="#c7d6e0"/>
+          <rect x="250" y="30" width="110" height="90" fill="#bcd7ee" stroke="#fff" stroke-width="6"/>
+          <line x1="305" y1="30" x2="305" y2="120" stroke="#fff" stroke-width="4"/>
+          <rect x="30" y="40" width="80" height="56" fill="#f2a541" stroke="#14213d" stroke-width="4"/>
+          <polyline points="38,88 60,62 76,78 88,68 102,88" fill="none" stroke="#14213d" stroke-width="3"/>
+          <!-- floor -->
+          <polygon points="0,170 400,170 400,250 0,250" fill="#c99764"/>
+          <g stroke="#a8784a" stroke-width="2"><line x1="0" y1="186" x2="400" y2="186"/><line x1="0" y1="204" x2="400" y2="204"/><line x1="0" y1="224" x2="400" y2="224"/>
+            <line x1="70" y1="170" x2="70" y2="186"/><line x1="230" y1="170" x2="230" y2="186"/><line x1="150" y1="186" x2="150" y2="204"/><line x1="320" y1="186" x2="320" y2="204"/><line x1="40" y1="204" x2="40" y2="224"/><line x1="260" y1="204" x2="260" y2="224"/><line x1="120" y1="224" x2="120" y2="250"/><line x1="350" y1="224" x2="350" y2="250"/></g>
+          <rect x="0" y="164" width="400" height="6" fill="#fff"/>
+          <!-- sofa -->
+          <rect x="120" y="130" width="160" height="50" rx="10" fill="#14213d"/>
+          <rect x="110" y="140" width="22" height="48" rx="8" fill="#1f3157"/>
+          <rect x="268" y="140" width="22" height="48" rx="8" fill="#1f3157"/>
+          <rect x="132" y="155" width="136" height="25" rx="5" fill="#1f3157"/>
+          <rect x="150" y="138" width="26" height="18" rx="4" fill="#f2a541"/>
+          <!-- lamp -->
+          <line x1="330" y1="140" x2="330" y2="186" stroke="#14213d" stroke-width="4"/><path d="M314 140h32l-8-22h-16z" fill="#f2a541"/>
+        </svg>
+        <figcaption><span data-i18n-strong="g4">Flooring &amp; Painting</span><span data-i18n="g_interior">Interior</span></figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow" data-i18n="about_eyebrow">About Us</span>
+      <h2 data-i18n="about_title">Quality Work You Can Trust</h2>
+      <p class="lead" data-i18n="about_text">Diego Almeida Construction is a registered New Jersey Home Improvement Contractor based in Clifton. We treat every home like our own — clear communication, fair written estimates, and work done right the first time. We proudly serve our customers in both English and Spanish.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#d98a1f" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="chk1">Registered with the NJ Division of Consumer Affairs</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#d98a1f" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="chk2">Clear written contracts and estimates</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#d98a1f" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="chk3">Clean, respectful job sites</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#d98a1f" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="chk4">Bilingual service — Se habla español</span></li>
+      </ul>
+    </div>
+    <div class="license-card">
+      <h3 data-i18n="lic_title">License Information</h3>
+      <dl>
+        <div class="lic-row"><dt data-i18n="lic_num">License #</dt><dd>13VH08017600</dd></div>
+        <div class="lic-row"><dt data-i18n="lic_status">Status</dt><dd><span class="status" data-i18n="lic_active">Active</span></dd></div>
+        <div class="lic-row"><dt data-i18n="lic_state">State</dt><dd>New Jersey</dd></div>
+        <div class="lic-row"><dt data-i18n="lic_type">Type</dt><dd data-i18n="lic_type_val">Home Improvement Contractor</dd></div>
+        <div class="lic-row"><dt data-i18n="lic_addr">Address</dt><dd>210 East 7th St<br>Clifton, NJ 07011</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="proc_eyebrow">How It Works</span>
+    <h2 data-i18n="proc_title">Simple, Straightforward Process</h2>
+    <div class="steps">
+      <div class="step"><h3 data-i18n="p1_t">Contact Us</h3><p data-i18n="p1_d">Call or email us with a few details about your project.</p></div>
+      <div class="step"><h3 data-i18n="p2_t">Site Visit</h3><p data-i18n="p2_d">We visit your home, take measurements and discuss your ideas.</p></div>
+      <div class="step"><h3 data-i18n="p3_t">Written Estimate</h3><p data-i18n="p3_d">You receive a clear, detailed estimate and timeline.</p></div>
+      <div class="step"><h3 data-i18n="p4_t">We Build</h3><p data-i18n="p4_d">Our team completes the work and walks you through the finished job.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="con_eyebrow">Get In Touch</span>
+    <h2 data-i18n="con_title">Request an Estimate</h2>
+    <p class="lead" data-i18n="con_lead">Tell us about your project. The form opens your email app with your message ready to send.</p>
+    <div class="contact-grid">
+      <form id="quoteForm">
+        <div class="row">
+          <label><span data-i18n="f_name">Full Name</span><input type="text" id="fName" required></label>
+          <label><span data-i18n="f_phone">Phone</span><input type="tel" id="fPhone" required></label>
+        </div>
+        <div class="row">
+          <label><span data-i18n="f_city">Town / City</span><input type="text" id="fCity"></label>
+          <label><span data-i18n="f_service">Service</span>
+            <select id="fService">
+              <option data-i18n="s1_t">Kitchen Remodeling</option>
+              <option data-i18n="s2_t">Bathroom Renovation</option>
+              <option data-i18n="s3_t">Decks &amp; Porches</option>
+              <option data-i18n="s4_t">Flooring</option>
+              <option data-i18n="s5_t">Painting &amp; Drywall</option>
+              <option data-i18n="s6_t">Exteriors &amp; Basements</option>
+              <option data-i18n="f_other">Other</option>
+            </select>
+          </label>
+        </div>
+        <label><span data-i18n="f_msg">Project Details</span><textarea id="fMsg" required></textarea></label>
+        <button type="submit" class="btn btn-primary" style="justify-content:center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+          <span data-i18n="f_send">Send by Email</span>
+        </button>
+        <p class="form-note" data-i18n="f_note">Prefer to talk? Call (973) 851-6814.</p>
+      </form>
+
+      <div class="info">
+        <a class="info-item" href="tel:+19738516814">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><b data-i18n="i_phone">Phone</b>(973) 851-6814</div>
+        </a>
+        <a class="info-item" href="mailto:diegode82@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <div><b data-i18n="i_email">Email</b>diegode82@gmail.com</div>
+        </a>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><b data-i18n="i_addr">Address</b>210 East 7th St, Clifton, NJ 07011</div>
+        </div>
+        <iframe class="map" title="Map" loading="lazy" src="https://maps.google.com/maps?q=210%20East%207th%20St%2C%20Clifton%2C%20NJ%2007011&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand-name">DIEGO ALMEIDA CONSTRUCTION</div>
+      <div>NJ Home Improvement Contractor Lic. #13VH08017600</div>
+    </div>
+    <div>&copy; <span id="yr"></span> Diego Almeida Construction. <span data-i18n="rights">All rights reserved.</span></div>
+  </div>
+</footer>
+
+<a href="tel:+19738516814" class="fab" aria-label="Call">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#14213d" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+</a>
+
+<script>
+const T = {
+  en:{
+    nav_services:"Services",nav_projects:"Projects",nav_about:"About",nav_contact:"Contact",
+    hero_badge:"NJ Licensed Home Improvement Contractor",
+    hero_title:'Building Better <span>Homes</span> Across New Jersey',
+    hero_text:"From kitchens and bathrooms to decks, flooring and exteriors — Diego Almeida Construction delivers quality craftsmanship, honest pricing and clean job sites. Serving Clifton and surrounding communities.",
+    cta_estimate:"Request an Estimate",cta_call:"Call Now",
+    trust_1:"NJ Licensed & Registered",trust_2:"English & Español",trust_3:"Based in Clifton, NJ",trust_4:"Written Estimates",
+    svc_eyebrow:"What We Do",svc_title:"Home Improvement Services",svc_lead:"One trusted contractor for projects big and small, inside and out.",
+    s1_t:"Kitchen Remodeling",s1_d:"Cabinets, countertops, backsplashes, lighting and complete kitchen makeovers.",
+    s2_t:"Bathroom Renovation",s2_d:"Tile work, vanities, tubs, walk-in showers and fixture upgrades.",
+    s3_t:"Decks & Porches",s3_d:"New decks, repairs, railings, steps and outdoor living spaces.",
+    s4_t:"Flooring",s4_d:"Hardwood, laminate, luxury vinyl plank and tile installation.",
+    s5_t:"Painting & Drywall",s5_d:"Interior and exterior painting, drywall installation and repair.",
+    s6_t:"Exteriors & Basements",s6_d:"Siding, windows, doors, basement finishing and general repairs.",
+    gal_eyebrow:"Our Work",gal_title:"Project Showcase",gal_lead:"A look at the kinds of spaces we build and transform.",
+    g1:"Kitchen Remodel",g2:"Bathroom Renovation",g3:"Backyard Deck",g4:"Flooring & Painting",g_interior:"Interior",g_exterior:"Exterior",
+    about_eyebrow:"About Us",about_title:"Quality Work You Can Trust",
+    about_text:"Diego Almeida Construction is a registered New Jersey Home Improvement Contractor based in Clifton. We treat every home like our own — clear communication, fair written estimates, and work done right the first time. We proudly serve our customers in both English and Spanish.",
+    chk1:"Registered with the NJ Division of Consumer Affairs",chk2:"Clear written contracts and estimates",chk3:"Clean, respectful job sites",chk4:"Bilingual service — Se habla español",
+    lic_title:"License Information",lic_num:"License #",lic_status:"Status",lic_active:"Active",lic_state:"State",lic_type:"Type",lic_type_val:"Home Improvement Contractor",lic_addr:"Address",
+    proc_eyebrow:"How It Works",proc_title:"Simple, Straightforward Process",
+    p1_t:"Contact Us",p1_d:"Call or email us with a few details about your project.",
+    p2_t:"Site Visit",p2_d:"We visit your home, take measurements and discuss your ideas.",
+    p3_t:"Written Estimate",p3_d:"You receive a clear, detailed estimate and timeline.",
+    p4_t:"We Build",p4_d:"Our team completes the work and walks you through the finished job.",
+    con_eyebrow:"Get In Touch",con_title:"Request an Estimate",con_lead:"Tell us about your project. The form opens your email app with your message ready to send.",
+    f_name:"Full Name",f_phone:"Phone",f_city:"Town / City",f_service:"Service",f_other:"Other",f_msg:"Project Details",f_send:"Send by Email",f_note:"Prefer to talk? Call (973) 851-6814.",
+    i_phone:"Phone",i_email:"Email",i_addr:"Address",rights:"All rights reserved.",
+    mail_subject:"Estimate Request",mail_name:"Name",mail_phone:"Phone",mail_city:"Town",mail_service:"Service",mail_details:"Details"
+  },
+  es:{
+    nav_services:"Servicios",nav_projects:"Proyectos",nav_about:"Nosotros",nav_contact:"Contacto",
+    hero_badge:"Contratista de Mejoras al Hogar con Licencia en NJ",
+    hero_title:'Construyendo Mejores <span>Hogares</span> en New Jersey',
+    hero_text:"Desde cocinas y baños hasta terrazas, pisos y exteriores — Diego Almeida Construction ofrece trabajo de calidad, precios honestos y áreas de trabajo limpias. Servimos a Clifton y comunidades cercanas.",
+    cta_estimate:"Solicitar Presupuesto",cta_call:"Llamar Ahora",
+    trust_1:"Licencia y Registro en NJ",trust_2:"Inglés y Español",trust_3:"Ubicados en Clifton, NJ",trust_4:"Presupuestos por Escrito",
+    svc_eyebrow:"Lo Que Hacemos",svc_title:"Servicios de Mejoras al Hogar",svc_lead:"Un contratista de confianza para proyectos grandes y pequeños, por dentro y por fuera.",
+    s1_t:"Remodelación de Cocinas",s1_d:"Gabinetes, encimeras, salpicaderos, iluminación y remodelaciones completas.",
+    s2_t:"Renovación de Baños",s2_d:"Trabajo de azulejos, tocadores, bañeras, duchas y accesorios nuevos.",
+    s3_t:"Terrazas y Porches",s3_d:"Terrazas nuevas, reparaciones, barandas, escalones y espacios exteriores.",
+    s4_t:"Pisos",s4_d:"Instalación de madera, laminado, vinilo de lujo y cerámica.",
+    s5_t:"Pintura y Drywall",s5_d:"Pintura interior y exterior, instalación y reparación de drywall.",
+    s6_t:"Exteriores y Sótanos",s6_d:"Revestimiento, ventanas, puertas, acabado de sótanos y reparaciones generales.",
+    gal_eyebrow:"Nuestro Trabajo",gal_title:"Galería de Proyectos",gal_lead:"Una muestra de los espacios que construimos y transformamos.",
+    g1:"Remodelación de Cocina",g2:"Renovación de Baño",g3:"Terraza Trasera",g4:"Pisos y Pintura",g_interior:"Interior",g_exterior:"Exterior",
+    about_eyebrow:"Sobre Nosotros",about_title:"Trabajo de Calidad en el que Puede Confiar",
+    about_text:"Diego Almeida Construction es un Contratista de Mejoras al Hogar registrado en New Jersey, ubicado en Clifton. Tratamos cada hogar como si fuera el nuestro — comunicación clara, presupuestos justos por escrito y trabajo bien hecho desde el principio. Atendemos a nuestros clientes en inglés y en español.",
+    chk1:"Registrado con la División de Asuntos del Consumidor de NJ",chk2:"Contratos y presupuestos claros por escrito",chk3:"Áreas de trabajo limpias y respetuosas",chk4:"Servicio bilingüe — We speak English",
+    lic_title:"Información de Licencia",lic_num:"Licencia #",lic_status:"Estado",lic_active:"Activa",lic_state:"Estado (EE.UU.)",lic_type:"Tipo",lic_type_val:"Contratista de Mejoras al Hogar",lic_addr:"Dirección",
+    proc_eyebrow:"Cómo Funciona",proc_title:"Un Proceso Simple y Claro",
+    p1_t:"Contáctenos",p1_d:"Llámenos o envíenos un correo con algunos detalles de su proyecto.",
+    p2_t:"Visita",p2_d:"Visitamos su casa, tomamos medidas y hablamos de sus ideas.",
+    p3_t:"Presupuesto Escrito",p3_d:"Recibe un presupuesto claro y detallado con fechas.",
+    p4_t:"Construimos",p4_d:"Nuestro equipo completa el trabajo y lo revisamos juntos al final.",
+    con_eyebrow:"Contáctenos",con_title:"Solicitar Presupuesto",con_lead:"Cuéntenos sobre su proyecto. El formulario abre su aplicación de correo con el mensaje listo para enviar.",
+    f_name:"Nombre Completo",f_phone:"Teléfono",f_city:"Pueblo / Ciudad",f_service:"Servicio",f_other:"Otro",f_msg:"Detalles del Proyecto",f_send:"Enviar por Correo",f_note:"¿Prefiere hablar? Llame al (973) 851-6814.",
+    i_phone:"Teléfono",i_email:"Correo",i_addr:"Dirección",rights:"Todos los derechos reservados.",
+    mail_subject:"Solicitud de Presupuesto",mail_name:"Nombre",mail_phone:"Teléfono",mail_city:"Ciudad",mail_service:"Servicio",mail_details:"Detalles"
+  }
+};
+
+let lang = "en";
+function setLang(l){
+  lang = T[l] ? l : "en";
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[lang][k]) el.textContent=T[lang][k]; });
+  document.querySelectorAll("[data-i18n-html]").forEach(el=>{ const k=el.dataset.i18nHtml; if(T[lang][k]) el.innerHTML=T[lang][k]; });
+  document.querySelectorAll("[data-i18n-strong]").forEach(el=>{ const k=el.dataset.i18nStrong; if(T[lang][k]) el.textContent=T[lang][k]; });
+  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active", b.dataset.lang===lang));
+  try{ localStorage.setItem("da_lang", lang); }catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+
+let saved=null; try{ saved=localStorage.getItem("da_lang"); }catch(e){}
+setLang(saved || ((navigator.language||"en").toLowerCase().startsWith("es") ? "es" : "en"));
+
+// mobile menu
+const menu=document.getElementById("menu");
+document.getElementById("burger").addEventListener("click",()=>menu.classList.toggle("open"));
+menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+
+// form -> email
+document.getElementById("quoteForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const t=T[lang], v=id=>document.getElementById(id).value.trim();
+  const body = `${t.mail_name}: ${v("fName")}\n${t.mail_phone}: ${v("fPhone")}\n${t.mail_city}: ${v("fCity")}\n${t.mail_service}: ${document.getElementById("fService").selectedOptions[0].text}\n\n${t.mail_details}:\n${v("fMsg")}`;
+  window.location.href = "mailto:diegode82@gmail.com?subject="+encodeURIComponent(t.mail_subject+" – "+v("fName"))+"&body="+encodeURIComponent(body);
+});
+
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
